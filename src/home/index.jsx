@@ -4,7 +4,7 @@ function Home(){
     //estados
     const [departamentos, setDepartamentos] = useState(null);
     const [capitales, setCapitales] = useState(null);
-    const [modo, setModo] = useState("departamentos");
+    const [modo, setModo] = useState("capitales");
     //use efect
     useEffect(() => {
     const urlDpt =
