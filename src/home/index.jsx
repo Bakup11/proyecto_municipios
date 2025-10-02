@@ -4,6 +4,7 @@ function Home(){
     //estados
     const [departamentos, setDepartamentos] = useState(null);
     const [capitales, setCapitales] = useState(null);
+    const [modo, setModo] = useState("departamentos");
     //use efect
     useEffect(() => {
     const urlDpt =
@@ -30,10 +31,10 @@ function Home(){
     return(
         <>
       <div>
-        <button>
+        <button onClick={() => setModo("departamentos")}>
           Mostrar Departamentos
         </button>
-        <button>Mostrar Capitales</button>
+        <button onClick={() => setModo("capitales")}>Mostrar Capitales</button>
       </div>
 
       <div>
